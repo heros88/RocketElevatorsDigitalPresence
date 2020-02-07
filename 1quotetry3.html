@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Quote Form </title>
+    <meta name="description" content="" />
+    <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- WEB FONTS : use %7C instead of | (pipe) -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+        rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--
+    		<!- REVOLUTION SLIDER ->
+    		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+    	    -->
+    <!-- THEME CSS -->
+    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+
+
+</head>
+
+<body>
+    <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+        <!-- TOP NAV -->
+        <header id="topNav">
+            <div class="container">
+
+                <!-- Mobile Menu Button -->
+                <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- Logo -->
+                <a class="logo float-left scrollTo" href="#top">
+                    <img src="assets/images/R2.png" alt="" />
+                </a>
+
+                <!-- 
+        							Top Nav 
+        							
+        							AVAILABLE CLASSES:
+        							submenu-dark = dark sub menu
+        						-->
+                <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                    <nav class="nav-main">
+
+                        <!-- 
+        									.nav-onepage
+        									Required for onepage navigation links
+        									
+        									Add .external for an external link!
+        								-->
+                        <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                            <li class="active">
+                                <!-- HOME -->
+                                <a href="Index.html">
+                                    HOME
+                                </a>
+                            </li>
+                            <li>
+                                <!-- SERVICES -->
+                                <a href="Index.html#services">
+                                    SERVICES
+                                </a>
+                            </li>
+                            <li>
+                                <!-- WORK -->
+                                <a href="Index.html#work">
+                                    PORTFOLIO
+                                </a>
+                            </li>
+                            <li>
+                                <!-- NEWS -->
+                                <a href="Index.html#news">
+                                    NEWS
+                                </a>
+                            </li>
+                            <!--
+        									<li><!-  OVERVIEW ->
+        										<a href="#overview">
+        											OVERVIEW
+        										</a>
+        									-->
+                            </li>
+                            <li>
+                                <!-- CLIENTS -->
+                                <a href="Index.html#clients">
+                                    CLIENTS
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <!-- CONTACT -->
+                                <a href="Index.html#contact">
+                                    CONTACT
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <!-- /Top Nav -->
+
+    </div>
+
+    <br>
+
+    <!-- CONTACT -->
+    <section id="quote">
+        <div class="container">
+
+            <header class="text-center mb-60">
+                <h2>QUOTE PAGE</h2>
+                <p class="lead font-lato">Give us the details about your elevator project</p>
+                <hr />
+            </header>
+
+
+            <div class="row">
+
+                <!-- FORM -->
+                <div class="col-md-8 col-sm-8">
+
+                    <h3>Fill these windows to help our technicians do their best for you</h3>
+                    <br>
+
+                    <h4>Choose between, residential, commercial , corporate and hybrid*</h4>
+                    <br>
+
+                    <select id="choose">
+                        <option></option>
+                        <option value = "residential">Residential</option>
+                        <option value = "commercial">Commercial</option>
+                        <option value = "corporate">Corporate</option>
+                        <option value = "hybrid">Hybrid</option>
+                    </select>
+
+                    
+                    
+                    
+                    <div class="residential">
+                        
+
+                        number of the appartements<br>
+                        <input onchange='calculsResidential()' id="resapparts" type="number" name="" value="">
+
+                        number of the floors<br>
+                        <input onchange='calculsResidential()' id="resfloors" type="number" name="" value="">
+
+                        number of basements<br>
+                        <input onchange='calculsResidential()' id="resbasements" type="number" name="" value="">
+
+                    </div>
+
+                    <div class="commercial">
+
+                        number of the floors<br>
+                        <input onchange='calculsCommercial()' id="comfloors" type="number" name="" value="">
+                
+                        number of basements<br>
+                        <input onchange='calculsCommercial()' id="combasements" type="number" name="" value="">
+
+                        number of businesses<br>
+                        <input onchange='calculsCommercial()' id="combusiness" type="number" name="" value="">
+
+                        number of parking<br>
+                        <input onchange='calculsCommercial()' id="comparking" type="number" name="" value="">
+
+                        number of columns<br>
+                        <input onchange='calculsCommercial()' id="comcolumns" type="number" name="" value="">
+
+                    </div>
+
+                    <div class="corporative">
+
+                        number of companies<br>
+                        <input  id="corcompanies" type="number" name="" value="">
+
+                        number of floors<br>
+                        <input onchange='calculsCorporative()' id="corfloors" type="number" name="" value="">
+
+                        number of basements<br>
+                        <input onchange='calculsCorporative()' id="corbasements" type="number" name="" value="">
+
+                        number of parking<br>
+                        <input id="corparking" type="number" name="" value="">
+
+                        number of max occupants per floor<br>
+                        <input onchange='calculsCorporative()' id="cormaxoccupants" type="" name="" value="">
+
+                    </div>
+
+                    <div class="hybrid">
+
+                        number of the floors<br>
+                        <input onchange='calculsHybrid()' id="hybfloors" type="number" name="" value="">
+                        
+                        number of basements<br>
+                        <input onchange='calculsHybrid()' id="hybbasements" type="number" name="" value="">
+                        
+                        number of businesses<br>
+                        <input onchange='calculsHybrid()' id="hybbusiness" type="number" name="" value="">
+                        
+                        number of parking<br>
+                        <input onchange='calculsHybrid()' id="hybparking" type="number" name="" value="">
+
+                        number of max occupants per floor<br>
+                        <input onchange='calculsHybrid()' id="hybmaxoccupantsperfloor" type="number" name="" value="">
+
+                        number of hours of activity in a day<br>
+                        <input onchange='calculsHybrid()' id="hybhoursofactivity" type="number" name="" value="">
+
+
+                    </div> 
+                    
+                    <div>
+                        The number of elevators you need:<br>
+                        <input id="elevatorsneeded" type="number" name="" value="" disabled>
+                    </div>
+                    <br>
+
+                    <p><strong>Second, chose the quality of the elevator below</strong></p>
+
+                    <input id=standardfee type="radio" name="services" value="standard" onchange="costStandard()"> Standard<br>
+
+                    <input id=premiumfee type="radio" name="services" value="premium" onchange="costPremium()"> Premium<br>
+
+                    <input id=exceliumfee type="radio" name="services" value="other" onchange="costExcelium()"> Excelium<br><br>
+                    
+                    <br>Price of an elevator $: <input id="elevatorprice" type="text" disabled>
+                    <br>Installation costs $: <input id="installationfee" type="text" disabled>
+                    <br>Total cost $: <input id="totalcost" type="text" disabled>
+           
+                        <div class="copyright">
+                            <div class="container">
+                                <ul class="float-right m-0 list-inline mobile-block">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li>&bull;</li>
+                                    <li><a href="#">Privacy</a></li>
+                                </ul>
+                                &copy; All Rights Reserved, Company LTD
+                            </div>
+                        </div>
+                    
+                    </footer>
+                    <!-- /FOOTER -->
+                    
+                    </div>
+                    <!-- /wrapper -->
+                    
+                    
+                    <!-- SCROLL TO TOP -->
+                    <a href="#" id="toTop"></a>
+                    
+                    
+                    <!-- PRELOADER -->
+                    <div id="preloader">
+                        <div class="inner">
+                            <span class="loader"></span>
+                        </div>
+                    </div><!-- /PRELOADER -->
+                    
+                    
+                    <!-- JAVASCRIPT FILES -->
+                    <script>var plugin_path = 'assets/plugins/';</script>
+                    <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+                    <script src="assets/js/scripts.js"></script>
+                    <script src="assets/js/quotetry.js"></script>
+                    <script src="assets/js/calculquotetry.js"></script>
+                    
+
+                    <!-- REVOLUTION SLIDER -->
+                    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+                    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+                    <script src="assets/js/view/demo.revolution_slider.js"></script>
+                    
+                    <!-- PAGELEVEL SCRIPTS -->
+                    <script src="assets/js/contact.js"></script>
+                
+                    </body>
+                    
+                    </html>
